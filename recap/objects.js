@@ -23,18 +23,17 @@
 // console.log(car)
 
 const user = {
-    name:"Rizwan",
-    email:"James@gmail.com",
-    password:"jhsdfhhfnfuhd",
-    balance: 40,
-    isLoggedIn: false,
+    name:"Rizwan",  //string
+    email:"James@gmail.com", //string
+    password:"jhsdfhhfnfuhd", //string
+    balance: 40, // number
+    isLoggedIn: false, // boolean
     deposit(amount){
-
         if(this.isLoggedIn){
              console.log("Deposit failed: user not logged in")
         }
         console.log(`deposit of ${amount} successful`)
-   this.balance = this.balance + amount
+       this.balance = this.balance + amount
     }
 }
 
