@@ -27,7 +27,12 @@ const user = {
     email:"James@gmail.com",
     password:"jhsdfhhfnfuhd",
     balance: 40,
+    isLoggedIn: false,
     deposit(amount){
+
+        if(this.isLoggedIn){
+             console.log("Deposit failed: user not logged in")
+        }
         console.log(`deposit of ${amount} successful`)
    this.balance = this.balance + amount
     }
